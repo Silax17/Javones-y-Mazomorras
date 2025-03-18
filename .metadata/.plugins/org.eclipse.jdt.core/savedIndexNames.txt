@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\alumnat\Documents\GitHub\Javones-y-Mazomorras\.metadata\.plugins\org.eclipse.jdt.core
+3701440259.index
+487106022.index
