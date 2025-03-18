@@ -2,28 +2,31 @@ package d;
 
 import java.util.ArrayList;
 
-public class Inventari {
-	ArrayList<Equipament> equipament = new ArrayList<Equipament>();
+public class Inventario {
+	ArrayList<Equipamiento> equipamiento = new ArrayList<Equipamiento>();
 	
-	public Inventari(ArrayList<Equipament> equipament) {
-		this.equipament = equipament;
+	public Inventari(ArrayList<Equipamiento> equipamiento) {
+		this.equipamiento = equipamiento;
 	}
 
-	public ArrayList<Equipament> getEquipament() {
-		return equipament;
+
+	public ArrayList<Equipamiento> getEquipamiento() {
+		return equipamiento;
 	}
 
-	public void setEquipament(ArrayList<Equipament> equipament) {
-		this.equipament = equipament;
+
+	public void setEquipamiento(ArrayList<Equipamiento> equipamiento) {
+		this.equipamiento = equipamiento;
 	}
 
-	public void agregarEquipamiento(ArrayList<Equipament> equipament) {
-		this.equipament = equipament;
+
+	public void agregarEquipamiento(ArrayList<Equipamiento> equipamiento) {
+		this.equipamiento = equipamiento;
 	}
 	
 	public void mostrarInventario() {
-		for(int i = 0; i < equipament.size(); i++) {
-			System.out.println(equipament.get(i));
+		for(int i = 0; i < equipamiento.size(); i++) {
+			System.out.println(equipamiento.get(i));
 		}
 	}
 
