@@ -15,6 +15,10 @@ public class ladron extends Persona {
 	public void setInvisible(boolean invisible) {
 		this.invisible = invisible;
 	}
+	public void robar(boolean invisible) {
+		
+		
+	}
 	
 	
 	
