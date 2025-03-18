@@ -1,10 +1,10 @@
 package d;
 
-public class Equipament {
+public class equipamiento {
 	private String nombre;
 	private String tipo;
 	
-	public Equipament(String nombre, String tipo) {
+	public equipamiento(String nombre, String tipo) {
 		this.nombre = nombre;
 		this.tipo = tipo;
 	}
