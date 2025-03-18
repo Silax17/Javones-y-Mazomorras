@@ -16,6 +16,12 @@ public class mago extends Persona {
 		this.mana = mana;
 	}
 
+	public static void lanzarHechizo(int mana) {
 		
+	}
+	
+	public static void recargarMana(int mana){
+		
+	}
 	
 }
