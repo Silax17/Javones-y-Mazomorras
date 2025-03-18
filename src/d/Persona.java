@@ -6,12 +6,12 @@ public abstract class  Persona {
 	private int vida;
 	private Inventario inventario;
 
-	public Persona(String nombre, int nivel, int vida, Inventari inventario) {
+	public Persona(String nombre, int nivel, int vida, Inventario inventario) {
 		
 		this.nombre = nombre;
 		this.nivel = nivel;
 		this.vida = vida;
-		this.inventari = inventario;
+		this.inventario = inventario;
 	}
 
 	public String getNombre() {
