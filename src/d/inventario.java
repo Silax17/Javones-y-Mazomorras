@@ -2,25 +2,25 @@ package d;
 
 import java.util.ArrayList;
 
-public class inventario {
-	ArrayList<equipamiento> equipamiento = new ArrayList<equipamiento>();
+public class Inventario {
+	ArrayList<Equipamiento> equipamiento = new ArrayList<Equipamiento>();
 	
-	public inventario(ArrayList<equipamiento> equipamiento) {
+	public Inventario(ArrayList<Equipamiento> equipamiento) {
 		this.equipamiento = equipamiento;
 	}
 
 
-	public ArrayList<equipamiento> getEquipamiento() {
+	public ArrayList<Equipamiento> getEquipamiento() {
 		return equipamiento;
 	}
 
 
-	public void setEquipamiento(ArrayList<equipamiento> equipamiento) {
+	public void setEquipamiento(ArrayList<Equipamiento> equipamiento) {
 		this.equipamiento = equipamiento;
 	}
 
 
-	public void agregarEquipamiento(ArrayList<equipamiento> equipamiento) {
+	public void agregarEquipamiento(ArrayList<Equipamiento> equipamiento) {
 		this.equipamiento = equipamiento;
 	}
 	
