@@ -6,7 +6,7 @@ public class guerrero extends Persona {
 	private Persona compañeroProtegido;
 	
 	
-	public guerrero(String nombre, int nivel, int vida, Inventari inventario, boolean protegiendo, Persona compañeroProtegido) {
+	public guerrero(String nombre, int nivel, int vida, Inventario inventario, boolean protegiendo, Persona compañeroProtegido) {
 		super(nombre, nivel, vida, inventario);
 		this.protegiendo = protegiendo;
 		this.compañeroProtegido = compañeroProtegido;
