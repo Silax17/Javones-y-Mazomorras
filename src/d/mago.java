@@ -25,14 +25,14 @@ public class mago extends Persona {
 		System.out.println("Hechizo lanzado");
 		this.mana= this.mana - mana;
 		}
-		}
+	}
 
-		public void recargarMana(int mana){
+	public void recargarMana(int mana){
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Cuanto mana quieres recargar?: ");
 		mana = scan.nextInt();
 
 		this.mana = this.mana + mana;
-		}
+	}
 	
 }
