@@ -60,10 +60,20 @@ public class guerrero extends Persona {
 	}
 	
 	@Override // persona ja conté el metode bajarVida, en aquest cas la classe guerrero conté un metode de bajarVida diferent a Persona // 
+	
 	public void bajarVida (int vida) {
+		
 		if (this.protegiendo) {
 			vida = vida / 2; 
 		}
+		
+		super.bajarVida (vida); // es crida el bajarVida de Persona per restarli el guerrero la vida al personatge // 
+		
+	}
+	
+	public Persona estaProtegiendo() { // el personatge indica que esta sent protegit 
+		
+		return this.compañeroProtegido;
 		
 	}
 	
