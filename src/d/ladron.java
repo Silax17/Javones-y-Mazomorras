@@ -15,9 +15,22 @@ public class ladron extends Persona {
 	public void setInvisible(boolean invisible) {
 		this.invisible = invisible;
 	}
+	
 	public void robar(boolean invisible) {
+		if(this.invisible) {
+			System.out.println("No t'ha pillat el Olegario, Felicitats");
+		}
+		else if(!this.invisible) {
+			System.out.println("T'ha pillat el Olegario, Perdedor");
+		}
 		
 		
+	}
+	public void hacerseInvisible() {
+		this.invisible=!this.invisible;
+	}
+	public boolean estaInvisible() {
+		return this.invisible;
 	}
 	
 	
