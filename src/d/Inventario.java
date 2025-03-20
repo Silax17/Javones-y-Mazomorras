@@ -20,8 +20,8 @@ public class Inventario {
 	}
 
 
-	public void agregarEquipamiento(ArrayList<Equipamiento> equipamiento) {
-		this.equipamiento = equipamiento;
+	public void agregarEquipamiento(Equipamiento equipaje) {
+		this.equipamiento.add(equipaje);
 	}
 	
 	public void mostrarInventario() {
