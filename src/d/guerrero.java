@@ -34,6 +34,8 @@ public class guerrero extends Persona {
 	}
 	
 	
+	// METODES //
+	
 	public void proteger (Persona compañero) {
 		
 		if (this.protegiendo) {
