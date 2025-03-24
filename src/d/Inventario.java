@@ -3,7 +3,7 @@ package d;
 import java.util.ArrayList;
 
 public class Inventario {
-	ArrayList<Equipamiento> equipamiento = new ArrayList<Equipamiento>();
+	private ArrayList<Equipamiento> equipamiento;
 	
 	public Inventario(ArrayList<Equipamiento> equipamiento) {
 		this.equipamiento = equipamiento;
