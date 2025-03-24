@@ -25,11 +25,11 @@ public class Inventario {
 	}
 	
 	public String mostrarInventario() {
-		String inventarioM = "";
+		String inventario = "";
 		for(int i = 0; i < equipamiento.size(); i++) {
-			inventarioM += equipamiento.get(i).getNombre() + "\n";
+			inventario += equipamiento.get(i).getNombre() + " ";
 		}
-		return inventarioM;
+		return inventario;
 	}
 
 }
