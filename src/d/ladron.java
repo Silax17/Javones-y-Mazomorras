@@ -1,9 +1,8 @@
 package d;
-
-public class ladron extends Persona {
+public class Ladron extends Persona {
 	private boolean invisible;
 
-	public ladron(String nombre, int nivel, int vida, Inventario inventario, boolean invisible) {
+	public Ladron(String nombre, int nivel, int vida, Inventario inventario, boolean invisible) {
 		super(nombre, nivel, vida, inventario);
 		this.invisible = invisible;
 	}
@@ -33,10 +32,7 @@ public class ladron extends Persona {
 		return this.invisible;
 	}
 	
-	
-	
-
-	
-	
-
 }
+	
+
+	
