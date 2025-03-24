@@ -27,6 +27,12 @@ public class Ladron extends Persona {
 	}
 	public void hacerseInvisible() {
 		this.invisible=!this.invisible;
+		if(this.invisible) {
+			System.out.println(getNombre()+"ahora es invisible");
+		}
+		else  {
+			System.out.println(getNombre()+"ya no es invisible");
+		}
 	}
 	public boolean estaInvisible() {
 		return this.invisible;
