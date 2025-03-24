@@ -44,14 +44,14 @@ public class Guerrero extends Persona {
 		} else if(!this.protegiendo) {
 				this.compañeroProtegido = compañero;
 				this.protegiendo=true;
-				System.out.println(getNombre() + "ha protegido a este compañero: " + compañero.getNombre());
+				System.out.println(getNombre() + " ha protegido a este compañero: " + compañero.getNombre());
 		}
 	}	
 	
 	public void dejardeProteger () {
 		
 		if (this.protegiendo) {
-			System.out.println(getNombre() + "le ha quitado la protección a este compañero: " + this.compañeroProtegido.getNombre());
+			System.out.println(getNombre() + " le ha quitado la protección a este compañero: " + this.compañeroProtegido.getNombre());
 			
 			this.protegiendo = false; 
 			this.compañeroProtegido = null; // si el company no estar sent protegit s'assigna com a null aquell company que estava protegit //

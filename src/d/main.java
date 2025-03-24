@@ -7,21 +7,26 @@ public class main {
 	    public static void main(String[] args) {
 	    	
 	    	
-	    	// Crear una espada y un escudo
+	    	// Crear una espada, una vara y un machete
 	    	Equipamiento espada = new Equipamiento("Espada", "Arma");
-	        Equipamiento escudo = new Equipamiento("Escudo", "Defensa");
+	    	Equipamiento vara = new Equipamiento("Vara de la Calma", "Arma");
+	    	Equipamiento machete = new Equipamiento("Machete", "Arma");
+	      
 
-	        // Crear un inventario vacio
-	        Inventario inventario = new Inventario();
+	        // Crear inventarios para cada personaje
+	        Inventario inventarioGuerrero = new Inventario();
+	        Inventario inventarioMago = new Inventario();
+	        Inventario inventarioLadron = new Inventario();
 
-	        // Agregar a los inventarios de todos los personajes una espada y un escudo
-	        inventario.agregarEquipamiento(espada);
-	        inventario.agregarEquipamiento(escudo);
+	        // Agregar a los inventarios de cada personaje su arma
+	        inventarioGuerrero.agregarEquipamiento(espada);
+	        inventarioMago.agregarEquipamiento(vara);
+	        inventarioLadron.agregarEquipamiento(machete);
 	       
 	        // Crear los personajes
-	        Guerrero guerrero = new Guerrero("Oriol el destrosamorenes", 10, 150, inventario, false, null);
-	        Mago mago = new Mago("Jano el Calm Minder", 15, 100, inventario, 200);
-	        Ladron ladron = new Ladron("Black Alex", 8, 90, inventario, false);
+	        Guerrero guerrero = new Guerrero("Oriol el destrosamorenes", 10, 150, inventarioGuerrero, false, null);
+	        Mago mago = new Mago("Jano el Calm Minder", 15, 100, inventarioMago, 200);
+	        Ladron ladron = new Ladron("Black Alex", 8, 90, inventarioLadron, false);
 
 	       
 	        System.out.println("Información del Guerrero");
