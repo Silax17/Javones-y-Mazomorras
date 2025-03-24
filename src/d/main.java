@@ -19,46 +19,49 @@ public class main {
 	        inventario.agregarEquipamiento(escudo);
 	       
 	        // Crear los personajes
-	        Guerrero guerrero = new Guerrero("Arthur", 10, 150, inventario, false, null);
-	        Mago mago = new Mago("Gandalf", 15, 100, inventario, 200);
-	        Ladron ladron = new Ladron("Robin", 8, 90, inventario, false);
+	        Guerrero guerrero = new Guerrero("Oriol el destrosamorenes", 10, 150, inventario, false, null);
+	        Mago mago = new Mago("Jano el Calm Minder", 15, 100, inventario, 200);
+	        Ladron ladron = new Ladron("Black Alex", 8, 90, inventario, false);
 
 	       
 	        System.out.println("Información del Guerrero");
 	        guerrero.mostrarInfo();
 	        
+	        System.out.println(" ");
 	        System.out.println("Información del Mago");
 	        mago.mostrarInfo();
 	        
+	        System.out.println(" ");
 	        System.out.println("Información del Ladron");
 	        ladron.mostrarInfo();
 	        
-	      
+	        System.out.println(" ");
 	        guerrero.proteger(mago); // Probar funciones
-	        
+	        System.out.println(" ");
 	       
 	        guerrero.bajarVida(50);  
-	        
+	        System.out.println(" ");
 	        
 	        guerrero.dejardeProteger();
-	        
+	        System.out.println(" ");
 	      
 	        mago.lanzarHechizo(50);
-	        
+	        System.out.println(" ");
 	        
 	        ladron.robar(true);  
 	        
-	       
+	        System.out.println(" ");
 	        ladron.hacerseInvisible();
+	        System.out.println(" ");
 	        ladron.robar(false); 
 	        
-	        
+	        System.out.println(" ");
 	        System.out.println("Inventario del Guerrero");
 	        System.out.println(guerrero.getInventario().mostrarInventario());
-	        
+	        System.out.println(" ");
 	        System.out.println("Inventario del Mago");
 	        System.out.println(mago.getInventario().mostrarInventario());
-	        
+	        System.out.println(" ");
 	        System.out.println("Inventario del Ladron");
 	        System.out.println(ladron.getInventario().mostrarInventario());
 	    }
