@@ -1,12 +1,12 @@
 package d;
 
-public class guerrero extends Persona {
+public class Guerrero extends Persona {
 	
 	private boolean protegiendo; 
 	private Persona compañeroProtegido;
 	
 	
-	public guerrero(String nombre, int nivel, int vida, Inventario inventario, boolean protegiendo, Persona compañeroProtegido) {
+	public Guerrero(String nombre, int nivel, int vida, Inventario inventario, boolean protegiendo, Persona compañeroProtegido) {
 		super(nombre, nivel, vida, inventario);
 		this.protegiendo = protegiendo;
 		this.compañeroProtegido = compañeroProtegido;
