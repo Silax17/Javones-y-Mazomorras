@@ -20,8 +20,8 @@ public class Inventario {
 	}
 
 
-	public void agregarEquipamiento(Equipamiento equipaje) {
-		this.equipamiento.add(equipaje);
+	public void agregarEquipamiento(Equipamiento equipamiento) {
+		this.equipamiento.add(equipamiento);
 	}
 	
 	public void mostrarInventario() {

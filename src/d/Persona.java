@@ -7,7 +7,6 @@ public abstract class  Persona {
 	private Inventario inventario;
 
 	public Persona(String nombre, int nivel, int vida, Inventario inventario) {
-		
 		this.nombre = nombre;
 		this.nivel = nivel;
 		this.vida = vida;
@@ -69,8 +68,8 @@ public abstract class  Persona {
 	}
 	
 	
-	public void agregarEquipamiento (Inventario inventario) {
-		agregarEquipamiento(inventario);
+	public void agregarEquipamiento (Equipamiento equipamiento) {
+		this.inventario.agregarEquipamiento(equipamiento);
 		
 	}
 
