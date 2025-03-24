@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Inventario {
 	private ArrayList<Equipamiento> equipamiento;
 	
-	public Inventario(ArrayList<Equipamiento> equipamiento) {
-		this.equipamiento = equipamiento;
+	public Inventario() {
+		this.equipamiento = new ArrayList<Equipamiento>();
 	}
 
 
