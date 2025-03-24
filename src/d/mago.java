@@ -31,8 +31,9 @@ public class Mago extends Persona {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Cuanto mana quieres recargar?: ");
 		mana = scan.nextInt();
-
-		this.mana = this.mana + mana;
+		this.mana += mana;
+		System.out.println("Mana recargado");
+		System.out.println("Mana actual: "+this.mana);
 	}
 	
 }
