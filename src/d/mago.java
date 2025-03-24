@@ -23,7 +23,7 @@ public class Mago extends Persona {
 		System.out.println("No se puede lanzar hechizo");
 		}else {
 		System.out.println("Hechizo lanzado");
-		this.mana= this.mana - mana;
+		this.mana -= mana;
 		}
 	}
 
