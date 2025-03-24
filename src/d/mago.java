@@ -2,10 +2,10 @@ package d;
 
 import java.util.Scanner;
 
-public class mago extends Persona {
+public class Mago extends Persona {
 	private int mana;
 
-	public mago(String nombre, int nivel, int vida, Inventario inventario, int mana) {
+	public Mago(String nombre, int nivel, int vida, Inventario inventario, int mana) {
 		super(nombre, nivel, vida, inventario);
 		this.mana = mana;
 	}
