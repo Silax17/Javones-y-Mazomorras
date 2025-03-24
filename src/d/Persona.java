@@ -10,7 +10,7 @@ public abstract class  Persona {
 		this.nombre = nombre;
 		this.nivel = nivel;
 		this.vida = vida;
-		this.inventario = inventario;
+		this.inventario =inventario;
 	}
 
 	public String getNombre() {
