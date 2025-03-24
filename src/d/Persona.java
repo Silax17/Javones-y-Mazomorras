@@ -7,7 +7,6 @@ public abstract class  Persona {
 	private Inventario inventario;
 
 	public Persona(String nombre, int nivel, int vida, Inventario inventario) {
-		
 		this.nombre = nombre;
 		this.nivel = nivel;
 		this.vida = vida;
@@ -46,5 +45,32 @@ public abstract class  Persona {
 		this.inventario = inventario;
 	}
 	
+	// METODES //
+	
+	public void mostrarInfo() {
+		
+		System.out.println("Nombre: " + this.nombre);
+		System.out.println("Nivel: " + this.nivel);		
+		System.out.println("Vida: " + this.vida);
+		System.out.println("Inventario: " + this.inventario);
+		
+	}
+	
+	public void bajarVida (int vida) {		
+		this.vida -= vida;
+		
+		if (vida < 0) {
+			this.vida = 0; 
+		}
+		
+		System.out.println(this.nombre + " esta es su vida actual: " + this.vida);
+		
+	}
+	
+	
+	public void agregarEquipamiento (Equipamiento equipamiento) {
+		this.inventario.agregarEquipamiento(equipamiento);
+		
+	}
 
 }
