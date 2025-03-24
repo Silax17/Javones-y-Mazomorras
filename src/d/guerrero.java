@@ -8,8 +8,8 @@ public class Guerrero extends Persona {
 	
 	public Guerrero(String nombre, int nivel, int vida, Inventario inventario, boolean protegiendo, Persona compañeroProtegido) {
 		super(nombre, nivel, vida, inventario);
-		this.protegiendo = protegiendo;
-		this.compañeroProtegido = compañeroProtegido;
+		this.protegiendo = false;
+		this.compañeroProtegido = null;
 		
 	}
 
@@ -43,6 +43,7 @@ public class Guerrero extends Persona {
 			
 		} else if(!this.protegiendo) {
 				this.compañeroProtegido = compañero;
+				this.protegiendo=true;
 				System.out.println(getNombre() + "ha protegido a este compañero: " + compañero.getNombre());
 		}
 	}	

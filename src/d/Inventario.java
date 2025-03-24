@@ -26,7 +26,7 @@ public class Inventario {
 	
 	public void mostrarInventario() {
 		for(int i = 0; i < equipamiento.size(); i++) {
-			System.out.println(equipamiento.get(i));
+			System.out.println(equipamiento.get(i).getNombre());
 		}
 	}
 

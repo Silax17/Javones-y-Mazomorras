@@ -52,7 +52,7 @@ public abstract class  Persona {
 		System.out.println("Nombre: " + this.nombre);
 		System.out.println("Nivel: " + this.nivel);		
 		System.out.println("Vida: " + this.vida);
-		System.out.println("Inventario: " + this.inventario);
+		System.out.println("Inventario: " + getInventario().mostrarInventario());
 		
 	}
 	

@@ -24,5 +24,9 @@ public class Equipamiento {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
+	  @Override
+	    public String toString() {
+	        return "Equipamiento: " + nombre + " (Tipo: " + tipo + ")";
+	    }
 
 }
