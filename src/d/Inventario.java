@@ -24,10 +24,12 @@ public class Inventario {
 		this.equipamiento.add(equipamiento);
 	}
 	
-	public void mostrarInventario() {
+	public String mostrarInventario() {
+		String inventarioM = "";
 		for(int i = 0; i < equipamiento.size(); i++) {
-			System.out.println(equipamiento.get(i).getNombre());
+			inventarioM += equipamiento.get(i).getNombre() + "\n";
 		}
+		return inventarioM;
 	}
 
 }
